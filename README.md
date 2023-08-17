@@ -7,6 +7,9 @@ insert one lin in .env file => DATABASE_URL="postgresql://postgres:postgres@loca
 # prisma migrate
 npx prisma migrate deploy
 
+# migrate database
+npx prisma migrate dev --name "init"
+
 # database seeding
 npx prisma db seed
 
